@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.flex-item {
+    flex: 25%;
+    max-width: 25%;
+    box-shadow: 2px 2px rgb(228, 218, 218);
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.border {
+    border: 1px solid rgb(228, 218, 218);
+}
+
+.image {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.flex-item .icon {
+    width: 20px;
+}
+
+.flex-container .flex-item div .position {
+    position: relative;
+}
+
+.flex-container .flex-item div .position span {
+    position: absolute;
+    left: 40px;
+    top: 3px;
+    color: red;
+}
+
+.flex-container .flex-item div .position {
+    padding-bottom: 20px;
+}
+
+.btm-border {
+    border-bottom: 1px solid rgb(228, 218, 218);
+}
+
+.item-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.footer {
+    color: blue;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+button {
+    color: blue;
+    border: 1px dotted blue;
+    background: none;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 1px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .flex-item {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 991px) {
+    .flex-item {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 590px) {
+    .flex-item {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
